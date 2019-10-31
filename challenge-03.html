@@ -10,17 +10,25 @@
   <body>
     <form action="/your/api" method="">
     
-      <label>Name</label>
-      <input name="name" type="text" placeholder="Your name">
+      <label>
+        Name
+        <input name="name" type="text" placeholder="Your name">
+      </label>
       
-      <label>Email</label>
-      <input name="email" type="email">
+      <label>
+        Email
+        <input name="email" type="email">
+      </label>
       
-      <label>Pet Count</label>
-      <input name="pets">
+      <label>
+        Pet Count
+        <input name="pets" type="number">
+      </label>
       
-      <label>Birthday</label>
-      <input name="birthday">
+      <label>
+        Birthday
+        <input name="birthday">
+      </label>
       
       <select name="prefix">
         <option>Mr</option>
@@ -33,25 +41,38 @@
       </select>
       
       <!-- Associate labels with form elements with for and id -->
-      <input id="radio-admin" type="radio" name="role" value="Admin"/>
-      <label for="radio-admin">Admin</label>
       
-      <input type="radio" name="role" value="Editor" />
-      <label>Editor</label>
+      <label for="radio-admin">
+        <input id="radio-admin" type="radio" name="role" value="Admin"/>
+        Admin
+      </label>
       
-      <input type="radio" name="role" value="Contributor" />
-      <label>Contributor</label>
+      <label>
+          <input type="radio" name="role" value="Editor" />
+        Editor
+      </label>
       
-      <input type="checkbox" name="public">
-      <label>Public Bio</label>
+      <label>
+        <input type="radio" name="role" value="Contributor" />
+        Contributor
+      </label>
+      
+      <label>
+        <input type="checkbox" name="public">
+        Public Bio
+      </label>
       
       <textarea name="bio"></textarea>
       
-      <label>Upload Image</label>
-      <input name="image" type="file">
+      <label>
+          <input name="image" type="file">
+          Upload Image
+      </label>
       
-      <label>Self Destruct</label>
-      <input name="self-destruct" type="check">
+      <label>
+        <input name="self-destruct" type="check">
+        Self Destruct
+      </label>
       
       <button type="submit">Submit</button>
     </form>
