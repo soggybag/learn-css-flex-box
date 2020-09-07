@@ -1,29 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-    <style>
-      /* Your styles here */
+<head>
+  <title>Flex Box Challenge 2 Solution</title>
+  <style>
+    header {
+      /* add some margin to the header */
+      /* margin: 0 0 2em 0; */
+      /* This 0 on all sides, and 2em at the bottom */
+    }
 
-    </style>      
-  </head>
-  <body>
-    <article>
-      <header>
-        <h1>Weather forecast for Seattle</h1>
-        <small>Three day forecast</small>
-      </header>
-      <dl>
-        <dt><time>03 March 2018</time></dt>
-        <dd>Rain.</dd>
-        
-        <dt><time>04 March 2018</time></dt>
-        <dd>Periods of rain.</dd>
-    
-        <dt><time>05 March 2018</time></dt>
-        <dd>Heavy rain.</dd>
-      </dl>
-    </article>
-    
-  </body>
+    header > small {
+      /* color #777 medium gray */
+
+    }
+
+    h1 {
+      /* Remove the margin on the heading */
+      /* margin: 0 */
+
+    }
+
+    dt {
+      /* Add a line at the bottom */
+      /* border-bottom */
+      /* border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #aaa; */
+
+      /* 0.5 em margin on the bottom */
+      /* margin: 0 0 0.5em 0; */
+      /* 0.5em padding on the bottom */
+      /* padding: 0 0 0.5em 0; */
+      /* text align center */
+
+      /* make the font lighter weight */
+      /* font weight 100 */
+    }
+
+    dd {
+      /* add 2em margin on the bottom and 0 on the other sides */
+      
+      /* Color #777 medium gray */
+      
+      /* font weight 1000 */
+    }
+
+    body {
+      /* Font familiy Helvetica */
+      
+      /* display flex */
+      
+      /* justify content center */
+      
+      /* align items center */
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h1>Weather forecast for Seattle</h1>
+      <small>Three day forecast</small>
+    </header>
+    <dl>
+      <dt><time>03 March 2018</time></dt>
+      <dd>Rain.</dd>
+
+      <dt><time>04 March 2018</time></dt>
+      <dd>Periods of rain.</dd>
+
+      <dt><time>05 March 2018</time></dt>
+      <dd>Heavy rain.</dd>
+    </dl>
+  </article>
+
+</body>
+
 </html>

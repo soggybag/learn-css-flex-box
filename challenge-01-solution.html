@@ -1,4 +1,9 @@
-<style>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flex Box Challenge 1 Solution</title>
+  <style>
   /* Your styles here */
 
   body, html {
@@ -8,25 +13,25 @@
   body {
     font-family: Helvetica;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .box {
     font-size: 2em;
-    width: 50px;
-    height: 50px;
     background-color: brown;
     color: white;
+    width: 160px;
     
-    padding: 2em;
+    padding: 20px;
     margin: 1em;
 
     display: flex;
-		flex-direction: column;
-    justify-content: center;
+		flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-end;
+    flex-wrap: wrap;
 		
 		text-align: center;
   }
@@ -36,28 +41,32 @@
 		height: 40px;
 		background-color: #62aa0d;
 		padding: 5px 10px;
-		margin: 5px;
+		margin: 10px;
 	}
 
   .on-left {
     align-self: center;
   }
 </style>
-
+</head>
 <body>
   <div class="box">
     <div class="small-box">A</div>
 		<div class="small-box">B</div>
-		<div class="small-box on-left">Z</div>
+		<div class="small-box">Z</div>
   </div>
   <div class="box">
     <div class="small-box">A</div>
 		<div class="small-box">B</div>
-		<div class="small-box">C</div>
+    <div class="small-box">C</div>
+    <div class="small-box">D</div>
   </div>
   <div class="box">
     <div class="small-box">A</div>
 		<div class="small-box">B</div>
-		<div class="small-box">C</div>
+    <div class="small-box">C</div>
+    <div class="small-box">D</div>
+    <div class="small-box">E</div>
   </div>
 </body>
+</html>
