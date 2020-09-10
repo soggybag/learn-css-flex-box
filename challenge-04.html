@@ -5,54 +5,84 @@
     <style>
       body,
       html {
-        height: 100%;
+				/* Set the height of the body and html elements to 100% */
+
+				/* What does this do? Nromally these collapse to the height 
+				of the content. Setting the height to 100% opens them 
+				to the height of the browser window. */
       }
     
       body {
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        font-family: 'Helvetica Neue';
-        font-size: 16px;
-        line-height: 1.5;
-    
+				/* The cards will fill this space. */
+				/* Use display flex */
+        
+				/* Center the elements in the row */
+        
+				/* Use align items stretch to make the cards stretch from top to bottom */
+        
+				/* use your favorite font styles. Set font-family, font-size, line-height */
+        
       }
     
+			/* Style the h3. This is heading for each card */
       h3 {
-        font-size: 2em;
-        margin: 0;
+				/* Your favorite heading styles */
+        
+				/* Adjust the margin. Start with margin 0. */
+        
+				/* Then set the margin on the top and bottom to taste */
       }
     
+			/* Style the card containers */
       .card {
-        width: 340px;
-        /* height: 550px; */
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        border: 1px solid;
-        margin: 1em;
+				/* Set the width of the cards. I used 340px */
+        
+        /* Display flex */
+        
+				/* direction column */
+        
+				/* Align everything at the top with justify-content flex-start */
+        
+				/* Give the card a border */
+        
+				/* Add some margin, I used 1em */
+        
       }
     
+			/* The text needs some space between it and the edge of the box.
+			But the images wants to go all the way to edges. 
+			Padding would add space around everything. To solve this add 
+			padding to the inner elements. */
       .card h3,
       .card p {
-        padding: 0 1rem;
+				/* Add some padding to the h3 and p in the card. 
+				I used 0 on the top and bottom and 1rem on the left and right. */
+        
       }
     
-      .img-header {
-        height: 120px;
-        overflow: hidden;
-      }
-    
+			/* There is a button at the bottom style it. */
       .card button {
-        padding: 0.5em;
-        margin: 1em;
-        border: none;
-        background-color: cornflowerblue;
-        color: white;
-        width: 100px;
-        align-self: flex-end;
-        margin-top: auto;
-        font-size: 1rem;
+				/* button styles */
+				/* Add some padding, I used 0.5em */
+        
+				/* Add some margin, i used 1em */
+        
+				/* Remove the border, border: none */
+        
+				/* Set the background color, I used cornflowerblue */
+        
+				/* Set the color to #fff */
+        
+				/* Give the button a width, I used 100px */
+        
+
+				/* Position the button */
+				/* put it on the right side with align-self: flex-end */
+        
+				/* Push it to the bottom with margin-top: auto */
+        
+				/* Set the font-size, I used 1em */
+        
       }
     </style>
   </head>
