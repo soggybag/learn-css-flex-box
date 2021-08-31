@@ -6,6 +6,7 @@
   <style>
     /* Your styles here */
 
+    /* Set some base styles used by all elements */
     body {
       /* Set a base font style */
       /* font family Helvetica */
@@ -27,6 +28,7 @@
     }
 
     /* Use flex to arrange everything in a column */
+    /* Style the from tag */
     form {
       /* use flex to display everything in the form in a column */
       
@@ -40,6 +42,7 @@
     }
 
     /* Some general styles */
+    /* Style both the input and textarea elements */
     input,
     textarea {
       /* font size 1em */
@@ -49,13 +52,14 @@
     }
 
     /* File upload styles */
-
+    /* Style inputs with type attribute equal to file: <input type="file"> */
     input[type=file] {
       /* File is special we'll hide it's input */
       /* Hide the file input. You'll use the label for interaction */
       
     }
 
+    /* Style label with attribute for and value "input-file" <label for="input-file"> */
     label[for=input-file] {
       /* Make this label look like a button */
       /* border style solid, border width 1px */
@@ -85,6 +89,7 @@
     }
 
     /* The radio buttons and checkboxes need to arranged in a row */
+    /* Style a label with the class name h: <label class="h"> */
     label.h {
       /* flex direction rol */
       
@@ -97,6 +102,7 @@
 
     /* Style input type text, email, password, datetime, number */
     /* Use padding, border, margin, and border radius */
+    /* Style four inputs each with type attribute and values of: text, email, date, number */
     input[type=text],
     input[type=email],
     input[type=date],
@@ -110,17 +116,20 @@
     }
 
     /* Style the inputs type radio, checkbox, file */
+    /* Style three inputs with type attribute and values of radio, checkbox, file */
     input[type=radio],
     input[type=checkbox],
     input[type=file] {
 
     }
 
+    /* Style a span that is a child of an input */
     input > span {
       /* margin left 1em 0 everywhere else */
 
     }
 
+    /* Style a button with type = submit <button type="submit"> */
     button[type=submit] {
       /* padding 1em all sides */
       
@@ -138,11 +147,13 @@
       /* align-self: flex-end; */
     }
 
+    /* Style section that is a chile of a form */
     form > section {
       /* margin on the top and bottom 1em, margin 0 left and right */
 
     }
 
+    /* Style the last child section of a form */
     form > section:last-child {
       /* align-self: flex-end; */
     }
